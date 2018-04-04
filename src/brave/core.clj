@@ -20,4 +20,8 @@
   "slow function"
   [x]
   (Thread/sleep 1000)
-  )
+  (str "input:" x))
+
+(defn f1
+  [a]
+  (memoize (f a)))
